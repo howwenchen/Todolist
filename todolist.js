@@ -16,8 +16,10 @@ function add_and_create(e) {
   //創建按鈕
   let check = document.createElement("button");
   check.classList.add("check");
+  check.innerHTML = '<i class="fa-solid fa-check-to-slot"></i>';
   let del = document.createElement("button");
   del.classList.add("delete");
+  del.innerHTML = '<i class="fa-solid fa-trash-can-arrow-up"></i>';
 
   //加入文字
   let text = document.querySelector("#text").value;
@@ -53,12 +55,18 @@ delEvent.addEventListener("click", (e) => {
   if (e.target.classList == "delete") {
     e.target.parentElement.remove();
   }
-
-  //事件確認
-  if (e.target.classList == "check") {
-    document.querySelector(".check").classList.add();
+  if (e.target.classList == "fa-solid fa-trash-can-arrow-up") {
+    e.target.parentElement.parentElement.remove();
   }
 });
+
+// let checkevent =document.querySelector("section")
+// checkevent.addEventListener.apply("click",e =>{
+//     //事件確認
+//  if (e.target.classList == "check") {
+//     e.target.
+//   }
+// })
 
 //照時間排序
 let sortEvent = document.querySelector("#sort");
