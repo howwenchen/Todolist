@@ -24,6 +24,7 @@ form {
   /* Chrome, Safari, Edge, Opera */
   /* Firefox */
 }
+
 form input,
 form button {
   border: none;
@@ -31,18 +32,22 @@ form button {
   font-size: 1.75rem;
   margin: 0.1rem;
 }
-form input[type="number"] {
+
+form input[type=number] {
   width: 50px;
   text-align: center;
 }
+
 form input::-webkit-outer-spin-button,
 form input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-form input[type="number"] {
+
+form input[type=number] {
   -moz-appearance: textfield;
 }
+
 form button {
   cursor: pointer;
   background-color: rgb(0, 146, 114);
@@ -54,20 +59,34 @@ section {
   flex-direction: column;
   align-items: center;
 }
-
-.todo_div {
+section .todo_div {
   width: 30vw;
   display: flex;
   align-items: center;
   margin: 0.2rem 0rem;
+
 }
-.todo_div p {
-  background-color: white;
+section .todo_div .todo_div p {
+  background-color: aqua;
   color: black;
   padding: 0.25rem, 0.5rem;
   font-size: 1.75rem;
 }
-.todo_div button {
+section .todo_div .todo_div button {
   width: 10px;
   height: 10px;
-} /*# sourceMappingURL=style.css.map */
+}
+section .todo_div .todo_ptext {
+  width: 50%;
+}
+section .todo_div .todo_pdatetime {
+  width: 20%;
+  text-align: center;
+}
+section .todo_div button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
